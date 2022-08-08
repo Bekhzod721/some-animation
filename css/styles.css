@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0 ;   
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+body{
+  background-color: darkcyan;
+}
+
+.animations{
+  display: flex;
+  align-items: flex-end ;
+  justify-content: space-evenly;
+}
+
+.animation__1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FF7A00;
+  
+}
+
+.animation__1--img:hover{
+  transform: rotate(360deg);
+  transition: .4s ease-out;
+
+}
+
+.hiddenbox{
+  margin: 40px 0 0 0;
+  width: 100.33px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.hidden__animation--item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-bottom: 40px;
+  display: none;
+}
+
+.hiddenbox:hover .hidden__animation--item{
+  display: flex;
+}
+
